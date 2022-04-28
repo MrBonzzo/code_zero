@@ -1,7 +1,14 @@
 {% extends "layout/basic.html" %}
 
+{% block title %}
+{{ current_rubric.name }}
+{% endblock %}
+
 {% block content %}
 {% for bb in bbs %}
+    <h2>
+        Rubrics :: {{ current_rubric }}
+    </h2>
     <div>
         <h2>
             {{ bb.title }}
