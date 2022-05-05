@@ -1,0 +1,17 @@
+{% extends "layout/basic.html" %}
+
+{% block content %}
+{% for event in events %}
+    <div>
+        <h2>
+            {{ event.username }}
+        </h2>
+        <p>
+            {{ event.event_name }}
+        </p>
+        <p>
+            {{ event.weekdays }}
+        </p>
+    </div>
+{% endfor %}
+{% endblock %}
